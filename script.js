@@ -19,11 +19,11 @@ let handleLogout = () => {
 };
 
 function morph() {
-    if (location.pathname == "/Full-Stack-Home-Exercise-/class_24/Index.html") {
+    if (location.pathname == "./index.html") {
         if (sessionStorage.getItem("isLogin") == "true") {
             document.getElementById("user-name-h").textContent = `Welcome back ${sessionStorage.getItem("username")}`;
             document.getElementById("sign-out").textContent = "Sign-Out";
-            document.getElementById("img-div").style.backgroundImage = "url('/Full-Stack-Home-Exercise-/class_24/static/back.jpg')"
+            document.getElementById("img-div").style.backgroundImage = "url('./static/back.jpg')"
 
         } else {
             console.log(localStorage.getItem("isLogin"))
