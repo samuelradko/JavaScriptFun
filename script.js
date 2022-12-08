@@ -15,11 +15,11 @@ function redirect(link) {
 let handleLogout = () => {
     window.sessionStorage.clear();
     window.location.reload(true);
-    window.location.replace('../src/login.html');
+    window.location.replace('../login.html');
 };
 
 function morph() {
-    if (location.pathname == "/Full-Stack-Home-Exercise-/class_24/src/Index.html") {
+    if (location.pathname == "/Full-Stack-Home-Exercise-/class_24/Index.html") {
         if (sessionStorage.getItem("isLogin") == "true") {
             document.getElementById("user-name-h").textContent = `Welcome back ${sessionStorage.getItem("username")}`;
             document.getElementById("sign-out").textContent = "Sign-Out";
