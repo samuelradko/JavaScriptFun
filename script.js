@@ -42,7 +42,7 @@ let loginUser = () => {
     if (username === Data_User.test_user.username && password === Data_User.test_user.password) {
         sessionStorage.setItem("isLogin", true);
         sessionStorage.setItem("username", Data_User.test_user.username);
-        redirect(`Index.html`);
+        redirect(`./index.html`);
     } else {
         alert("Username and password do not match")
         sessionStorage.setItem("isLogin", false);
