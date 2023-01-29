@@ -15,7 +15,7 @@ function redirect(link) {
 let handleLogout = () => {
     window.sessionStorage.clear();
     window.location.reload(true);
-    window.location.replace('../login.html');
+    redirect('./index.html');
 };
 
 function morph() {
